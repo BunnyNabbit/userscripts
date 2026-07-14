@@ -58,7 +58,7 @@
 	}
 	/* dim tripwaffle mascot */
 	img[src="/assets/im/tripwaffle.svg"] {
-    filter: opacity(0.6);
+		filter: opacity(0.6);
 	}
 	/* invert tripwaffle external link icon */
 	a.button[href*="tripwaffle"] > span.icon {
