@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name	Dark ResultMaps
+@namespace	github.com/BunnyNabbit/userscripts
+@version	1.0.0
+@description	A dark theme for hdyc.neis-one.org.
+@author	BunnyNabbit "Aon"
+@preprocessor	default
+@var	color	backgroundColor	"Background color"	#000
+@var	color	inactiveDayColor "Inactive day color"	#262626
+@var	color	textColor "Text color"	#fff
+==/UserStyle== */
+
+@-moz-document domain("hdyc.neis-one.org") {
+	html {
+		background-color: var(--backgroundColor);
+	}
+	/* zhis has some outdated items. should clean it up. */
+	body, table, a[style="color:black"], a[style="color:black;"], #hdyc, #header > a, .extras, .countries {
+		color: var(--textColor) !important;
+	}
+	.day[data-level="0"],
+	.legend-item:first-child > .legend-color {
+		background-color: var(--inactiveDayColor) !important; /* using !important because first day has an inline style?*/
+	}
+	.leaflet-container {
+		filter: invert(1);
+	}
+}
