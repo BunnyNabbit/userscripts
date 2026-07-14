@@ -4,6 +4,9 @@
 @version	1.0.0
 @description	A dark theme for colornames.org.
 @author	BunnyNabbit "Aon"
+@homepageURL	https://github.com/BunnyNabbit/userscripts
+@supportURL	https://github.com/BunnyNabbit/userscripts/issues
+@license	MIT
 @preprocessor	default
 @var	color	backgroundColor	"Background color"	#000
 @var	color	secondaryColor "Secondary color"	#333
