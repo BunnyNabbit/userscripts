@@ -1,0 +1,77 @@
+/* ==UserStyle==
+@name	Dark colornames.org
+@namespace	github.com/BunnyNabbit/userscripts
+@version	1.0.0
+@description	A dark theme for colornames.org.
+@author	BunnyNabbit "Aon"
+@preprocessor	default
+@var	color	backgroundColor	"Background color"	#000
+@var	color	secondaryColor "Secondary color"	#333
+@var	color	textColor "Text color"	#fff
+==/UserStyle== */
+
+@-moz-document domain("colornames.org") {
+	html {
+		background-color: #000;
+		color:var(--textColor);
+	}
+	/* text content */
+	.content h1, .content h2, .content h3, .content h4, .content h5, .content h6,
+	.title, .content, .panel-block.is-active, .panel-block,
+	strong,
+	.navbar-item, .navbar-link,
+	.button:hover, a:hover {
+		color:var(--textColor);
+	}
+	.button {
+		border-color: var(--secondaryColor);
+	}
+	.button[disabled] {
+		background-color: unset;
+	}
+	.card, .footer, .input, .input::placeholder, .tag:not(body),
+	.button.is-light,
+	.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+		background-color: var(--secondaryColor);
+		color:var(--textColor);
+	}
+	a.panel-block:hover, label.panel-block:hover {
+		background-color: var(--secondaryColor);
+	}
+	/* hiding because it seems unused? my style makes it look worse. */
+	.card-footer {
+		display: none;
+	}
+	.panel-heading, .button,
+	.footer {
+		background-color: #0a0a0a; /* TODO: zhe purpose of zhis? */
+		color:var(--textColor);
+	}
+	code {
+		background-color: unset;
+	}
+	.navbar-menu {
+		background-color: unset;
+	}
+	/* dim tripwaffle mascot */
+	img[src="/assets/im/tripwaffle.svg"] {
+    filter: opacity(0.6);
+	}
+	/* invert tripwaffle external link icon */
+	a.button[href*="tripwaffle"] > span.icon {
+		filter: invert(1);
+	}
+	/*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
+	.button.is-danger.is-light {
+		background-color: #f14668;
+		color:var(--textColor);
+	}
+	.button.is-danger.is-light.is-hovered, .button.is-danger.is-light:hover {
+		background-color: #f03a5f;
+		color:var(--textColor);
+	}
+	.button.is-success.is-light {
+		background-color: #48c774;
+		color:var(--textColor);
+	}
+}
