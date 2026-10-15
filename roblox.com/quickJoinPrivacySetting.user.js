@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name "Who Can Join Me in Experiences" Toggle
-// @version 1.0.0
+// @version 1.0.1
 // @match https://*.roblox.com/*
+// @author BunnyNabbit "Aon Langton"
+// @license MIT
 // @icon https://bunnynabbit.com/app/defuse/bomb.png
 // @namespace https://bunnynabbit.com
 // @grant none

@@ -4,6 +4,7 @@
 // @version 1.1.1
 // @description Sets the favicon in issue pages to match that issue's state
 // @author BunnyNabbit "Aon Langton"
+// @license MIT
 // @match https://github.com/*
 // @icon https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant none
